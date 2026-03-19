@@ -54,7 +54,7 @@ export class AuthService {
     );
 
     if (!isPasswordCorrect) {
-      // Fallback: Check if it's a plain-text password from a previous update bug
+
       if (user.password === password) {
         console.log(`Migrating plain-text password for ${email}...`);
         const newHashed = await bcrypt.hash(password, 10);

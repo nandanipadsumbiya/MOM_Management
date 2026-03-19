@@ -4,8 +4,9 @@ import Link from 'next/link'
 import DeleteMeeting from '@/app/ui/DeleteMeeting'
 
 import { FaPlus, FaCalendarAlt, FaFileDownload, FaClock } from 'react-icons/fa'
-import { meetings } from '@/app/generated/browser'
+
 import SearchBar from '@/app/ui/SearchBar'
+import { meetings } from '@prisma/client'
 
 async function MeetingList({
   searchParams,

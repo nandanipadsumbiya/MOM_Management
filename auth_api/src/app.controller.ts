@@ -66,7 +66,7 @@ export class AppController {
     }
   }
 
-  // Staff-specific endpoints for effectiveness functionality
+
   @Get('staff-stats/:email')
   async getStaffStats(@Param('email') email: string) {
     // 1. Get StaffID by email
