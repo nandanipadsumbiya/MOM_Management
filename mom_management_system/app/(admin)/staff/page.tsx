@@ -4,12 +4,13 @@ import Link from 'next/link'
 import DeleteStaff from '@/app/ui/DeleteStaff'
 
 import { FaPlus, FaUser } from 'react-icons/fa'
-import { staff } from '@/app/generated/browser'
-import SearchBar from '@/app/ui/SearchBar'
 
+import SearchBar from '@/app/ui/SearchBar'
 import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
+
+const staffList = await prisma.staff.findMany()
 
 export default async function StaffList({
     searchParams,
