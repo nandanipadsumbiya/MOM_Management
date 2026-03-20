@@ -4,7 +4,7 @@ import Link from 'next/link'
 import DeleteStaff from '@/app/ui/DeleteStaff'
 
 import { FaPlus, FaUser } from 'react-icons/fa'
-import { staff } from '@/app/generated/browser'
+import { staff } from '@/app/generated/index-browser'
 import SearchBar from '@/app/ui/SearchBar'
 
 export default async function StaffList({
