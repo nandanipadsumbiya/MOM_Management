@@ -7,6 +7,10 @@ import { FaPlus, FaUser } from 'react-icons/fa'
 import { staff } from '@/app/generated/browser'
 import SearchBar from '@/app/ui/SearchBar'
 
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
+
 export default async function StaffList({
     searchParams,
 }: {
