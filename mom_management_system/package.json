@@ -6,8 +6,10 @@
     "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "prisma generate"
   },
+
   "dependencies": {
     "@prisma/adapter-mariadb": "^7.2.0",
     "@prisma/client": "^7.4.2",
